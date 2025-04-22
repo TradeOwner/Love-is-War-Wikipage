@@ -1,181 +1,207 @@
-<!DOCTYPE>
-<html>
-<link rel= "stylesheet" href="lolol.css">
-<center>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kaguya Love is War</title>
+  <link rel="stylesheet" href="lolol.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+  <style>
+    /* General Body Styling */
+    body {
+      background-image: url("background1.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      opacity: 0.95;
+      font-family: 'Karla', sans-serif;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
 
+    /* Navigation Bar Styling */
+    .topnav {
+      background-color: #333;
+      overflow: hidden;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .topnav a:hover {
+      background-color: #DC143C; /* Crimson red */
+      color: white;
+    }
+    .topnav a.active {
+      background-color: #DC143C;
+      color: white;
+    }
+    .topnav .icon {
+      display: none;
+    }
 
-<div class="topnav" id="myTopnav">
-  <a href="lolol.html" class="active">Home</a>
-  <a href="news.html">News</a>
-  <a href="imagegallery.html">Image Gallery</a>
-  <a href="music.html">Music</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
+    /* Text Container with Background Layer */
+    .content-container {
+      position: relative;
+      text-align: center;
+      padding: 30px;
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+      border-radius: 8px;
+      margin: 50px auto;
+      width: 90%;
+    }
 
-<center>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">        
-    </head>
-    <body>
-      <div class="slider-frame">
-          <div class="slide-images">
-                <div class="img-container">
-                    <img src="ows1.jpg">
-                </div>
-                <div class="img-container">
-                    <img src="ows.jpg">
-                </div>
-                <div class="img-container">
-                    <a href="news.html">"<img src="S222.jpg">"</a>
-                </div>
-          </div>
-      </div>
-<font size ="6">
-<font color = "pink">
-</font size>
-<br>
-<img style="max-width:95%;border:6px groove #D8302D;" src="jaja.jpg"
-alt = "jaja" width = "500" height = "340"> <br><br>
+    h1, h2 {
+      font-family: 'Karla', sans-serif;
+      color: pink;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Adds shadow for better visibility */
+    }
 
-<font size="6">
-<font color = "red">
-<b>
-Kaguya Love is War <br> </center>
-</font color>
-</font size>
+    /* Image and Video Styling */
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
 
+    video {
+      max-width: 80%;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
 
-<font size="6">
-<font color = "red">
-Synopsis: <br>
-</b>
-</font color>
-Kaguya Sama: Love is War: or Kaguya-sama wa Kokurasetai- Tensai-tachi no Ren'ai Zunosen, <br>
-Kaguya Wants to be Confessed to: The Geniuses War of Love and Brains is a japanese seinen manga series written and illustrated by Aka Akasaka.
-The series is published in English by Viz Media. Two Spin off manga launched in 2018, and an anime television series adaption by A-1 Pictures aired from January to March 2019. <br>
+    /* Table Styling */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 30px;
+    }
+    th, td {
+      border: 3px solid black;
+      padding: 10px;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.7); /* Dark background for table rows */
+    }
+    th {
+      background-color: #DC143C;
+      color: white;
+    }
+    td a {
+      text-decoration: none;
+    }
 
+    /* Footer Section for better spacing and design */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
 
+    /* Mobile Responsiveness */
+    @media screen and (max-width: 768px) {
+      .topnav a {
+        font-size: 14px;
+      }
+      .slider-frame img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
 
-<font color = "red">
-<b>
-<br>
-Summary <br>
-</font color>
-</b>
-Student council president Miyuki Shirogane and vice-president Kaguya Shinomiya appear to be the perfect couple. Kaguya is the daughter of a wealthy Conglomerate family, and Miyuki is the top student at the school and well known across the prefecture. Although they like each other, they are too proud to confess their love as they believe whoever does so first would lose. The story follows their many schemes to make the other one confess. 
-</body><br><br>
-</font size>
+  <!-- Navigation Bar -->
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="news.html">News</a>
+    <a href="imagegallery.html">Image Gallery</a>
+    <a href="music.html">Music</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
 
-<b><center><font size="6">
-<font color = "red">
-~Trailer~ <br><br>
-</b>
-</font color>
-</center>
-<style>
+  <!-- Main Content Area with Text and Images -->
+  <div class="content-container">
+    <h1>Kaguya Love is War</h1>
+    <h2>Synopsis:</h2>
+    <p style="font-size:18px;">
+      <b>Kaguya-sama: Love is War</b> (Japanese: かぐや様は告らせたい～天才たちの恋愛頭脳戦～) is a Japanese manga series written and illustrated by Aka Akasaka.<br>
+      It’s published in English by Viz Media. Two spin-offs launched in 2018, and an anime adaptation by A-1 Pictures aired in 2019.
+    </p>
 
-body {
-  background-image: url("background1.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100%;
-  background-opacity: 0.5;
-  filter: alpha(opacity=50)
-}
+    <h2>Summary:</h2>
+    <p style="font-size:18px;">
+      Student council president Miyuki Shirogane and vice-president Kaguya Shinomiya appear to be the perfect couple.
+      But both are too proud to confess their love, believing whoever confesses first loses. The story follows their clever (and hilarious) attempts to get the other to confess.
+    </p>
 
-</style>
-<style>
-table{
-border-collapse: collapse;
-}
-th, td {
-border: 3px solid black;
-padding: 10px;
-text-align: left;
-}
+    <!-- Trailer Video -->
+    <h2>~Trailer~</h2>
+    <video controls>
+      <source src="KGT.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
 
-</style>
-<table style ="width: 100%;text-align:center;background-color:transparent;">
-<center><video controls>
-<source src="KGT.mp4"
-type="video/mp4">
-</center></video>
-<br>
-<tr>
-<th><center><font size = "5">Main Characters</font size></center></th>
-<th><center><font size = "5">Name</center></font size></th>
-<th><center><font size = "5">Support Chararcters</center></font size></th>
-<th><center><font size = "5">Name</center></font size></th>
-</tr>
-<tr>
-<td><center><img src="Kaguya image/Kaguya1.jpg"
-alt = "Kaguya1" width = "120" height = "120"></td>
-<td><center><button type="button">
-<a href="Kaguyapage.html" class="button"><img src="buttons/haha2.jpg"
-alt = "haha2" width = "180" height = "45"></a></center></td>
-<td><center><img src="Kashiwagi.jpeg"
-alt = "Kashiwagi" width = "120" height = "120"></center></td>
-<td><center><button type="button">
-<a href="Kashiwagipage.html" class="button"><img src="buttons/haha3.jpg"
-alt = "haha3" width = "180" height = "45"></center></td>
-</tr>
-<tr>
-<td><center><img src="Shirogane.jpg"
-alt = "Shirogane" width = "120" height = "120"></center></td>
-<td><center><button type="button">
-<a href="Miyukipage.html" class="button"><img src="buttons/haha.jpg"
-alt = "haha" width = "180" height = "45"></a></center></td>
-<td><center><img src="hah.jpeg"
-alt = "hah" width = "120" height = "120"></center></td>
-<td><center><button type="button">
-<a href="Tsubasapage.html" class="button"><img src="buttons/haha4.jpg"
-alt = "haha4" width = "180" height = "45"></a></center></td>
-</tr>
-<tr>
-<td><center><img src="Chika image/Chika2.jpg"
-alt = "Chika2" width = "120" height = "120"></center></td>
-<td><center><button type="button">
-<a href="Chikapage.html" class="button"><img src="buttons/haha5.jpg"
-alt = "haha5" width = "180" height = "45"></a></center></td>
-<td><center><img src="Kei.jpg"
-alt = "Kei" width = "120" height = "120"></center></td>
-<td><center><button type="button">
-<a href="Keipage.html" class="button"><img src="buttons/haha8.jpg"
-alt = "haha8" width = "180" height = "45"></a></center></td>
-</tr>
-<tr>
-<td><center><img src="Ishigami.jpg"
-alt = "Ishigami" width = "120" height = "120"></center></td>
-<td><center><button type="button">
-<a href="Ishigamipage.html" class="button"><img src="buttons/haha10.jpg"
-alt = "haha10" width = "180" height = "45"></a></center></td>
-<td><center><img src="Ai image/Ai2.jpg"
-alt = "Ai" width = "120" height = "120"></center></td>
-<td><center><button type="button">
-<a href="aipage.html" class="button"><img src="buttons/haha6.jpg"
-alt = "haha6" width = "180" height = "45"></a></center></td>
-</tr>
-<tr>
-<td><center><img src="Maki Iino.jpg"
-alt = "Maki Iino" width = "120" height = "120"></center></td>
-<td><center><button type="button">
-<a href="Mikopage.html" class="button"><img src="buttons/haha9.jpg"
-alt = "haha9" width = "180" height = "45"></a></center></td>
-<td><center><img src="tsubame2.jpeg"
-alt = "tsubame2" width = "120" height = "120"></center></td>
-<td><center><button type="button">
-<a href="Tsubamepage.html" class="button"><img src="buttons/haha7.jpg"
-alt = "haha7" width = "180" height = "45"></center></td>
+  <!-- Character Table -->
+  <div class="content-container">
+    <h2>Main & Supporting Characters</h2>
+    <table>
+      <tr>
+        <th>Main Characters</th>
+        <th>Name</th>
+        <th>Support Characters</th>
+        <th>Name</th>
+      </tr>
+      <tr>
+        <td><img src="Kaguya image/Kaguya1.jpg" width="120" height="120"></td>
+        <td><a href="Kaguyapage.html"><img src="buttons/haha2.jpg" width="180" height="45"></a></td>
+        <td><img src="Kashiwagi.jpeg" width="120" height="120"></td>
+        <td><a href="Kashiwagipage.html"><img src="buttons/haha3.jpg" width="180" height="45"></a></td>
+      </tr>
+      <tr>
+        <td><img src="Shirogane.jpg" width="120" height="120"></td>
+        <td><a href="Miyukipage.html"><img src="buttons/haha.jpg" width="180" height="45"></a></td>
+        <td><img src="hah.jpeg" width="120" height="120"></td>
+        <td><a href="Tsubasapage.html"><img src="buttons/haha4.jpg" width="180" height="45"></a></td>
+      </tr>
+      <tr>
+        <td><img src="Chika image/Chika2.jpg" width="120" height="120"></td>
+        <td><a href="Chikapage.html"><img src="buttons/haha5.jpg" width="180" height="45"></a></td>
+        <td><img src="Kei.jpg" width="120" height="120"></td>
+        <td><a href="Keipage.html"><img src="buttons/haha8.jpg" width="180" height="45"></a></td>
+      </tr>
+      <tr>
+        <td><img src="Ishigami.jpg" width="120" height="120"></td>
+        <td><a href="Ishigamipage.html"><img src="buttons/haha10.jpg" width="180" height="45"></a></td>
+        <td><img src="Ai image/Ai2.jpg" width="120" height="120"></td>
+        <td><a href="aipage.html"><img src="buttons/haha6.jpg" width="180" height="45"></a></td>
+      </tr>
+    </table>
+  </div>
 
-</tr>
-</table> 
-
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Kaguya Love is War Website. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
-
-
